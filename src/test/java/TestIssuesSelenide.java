@@ -16,7 +16,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class TestIssuesSelenide {
 
-    String REPOSITORY = "Konyaz/currant_allure";
+    String repository= "Konyaz/currant_allure";
 
     @Test
 
@@ -24,9 +24,9 @@ public class TestIssuesSelenide {
         open("https://github.com");
 
         $(".header-search-input").click();
-        $(".header-search-input").sendKeys(REPOSITORY);
+        $(".header-search-input").sendKeys(repository);
         $(".header-search-input").submit();
-        $(By.linkText(REPOSITORY)).click();
+        $(By.linkText(repository)).click();
         $(".UnderlineNav-body").shouldHave(text("Issue"));
 
     }

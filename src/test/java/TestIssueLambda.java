@@ -16,7 +16,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
 public class TestIssueLambda {
-    String REPOSITORY = "Konyaz/currant_allure";
+    String repository = "Konyaz/currant_allure";
     String BASE_URL = "https://github.com";
 
     @Test
@@ -30,11 +30,11 @@ public class TestIssueLambda {
 
         step("Ищем репозиторий", (step) -> {
             $(".header-search-input").click();
-            $(".header-search-input").sendKeys(REPOSITORY);
+            $(".header-search-input").sendKeys(repository);
             $(".header-search-input").submit();
         });
         step("Переходим в репозиторий", () -> {
-            $(By.linkText(REPOSITORY)).click();
+            $(By.linkText(repository)).click();
         });
         step("Проверяем что Issue существует", () -> {
             $(".UnderlineNav-body").shouldHave(text("Issue"));
