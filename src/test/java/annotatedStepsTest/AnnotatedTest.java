@@ -28,7 +28,7 @@ public class AnnotatedTest {
         step.openMainPage();
         step.searchForRepository(repository);
         step.goToRepository(repository);
-
+        step.shouldSeeIssueText();
 
     }
 }
