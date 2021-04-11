@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
 
 @DisplayName("Набор тест с аннотациями")
 public class AnnotatedTest {
-    String repository= "Konyaz/currant_allure";
+    String repository = "Konyaz/currant_allure";
     private WebSteps step = new WebSteps();
 
     @Test

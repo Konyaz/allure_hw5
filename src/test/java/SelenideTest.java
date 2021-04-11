@@ -14,12 +14,11 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class TestIssuesSelenide {
+public class SelenideTest {
 
-    String repository= "Konyaz/currant_allure";
+    String repository = "Konyaz/currant_allure";
 
     @Test
-
     public void TestIssueSearch() {
         open("https://github.com");
 

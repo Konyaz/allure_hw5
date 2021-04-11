@@ -15,12 +15,11 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-public class TestIssueLambda {
+public class LambdaTest {
     String repository = "Konyaz/currant_allure";
     String BASE_URL = "https://github.com";
 
     @Test
-
     public void TestIssueSearch() {
         step("Открываем главную страницу", (step) -> {
             step.parameter("url", BASE_URL);
